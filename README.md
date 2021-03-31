@@ -12,6 +12,8 @@ In my FastAPI app, main.py and schema.py represents presentation layer, crud.py 
 * Create/update/delete of category;
 * Create/update/delete of product;
 
+
+
 # Deployment
 
 ## Installation
@@ -29,17 +31,19 @@ then
 ```console
 pip3 install requirements.txt
 ```
+
+## Run application
+Following command runs the app: 
+``` console 
+uvicorn task.main:app --reload
+```
 ## Testing
 
 Tests are run via:
 ``` console 
 pytest tests.py
 ```
-## Run application
-Following command runs the app: 
-``` console 
-uvicorn task.main:app --reload
-```
+If you run the tests, it will create empty test database and will pass the tests. Otherwise, it may use the existing database which may fail some tests due to the fact I manually hardwired the IDs'.
 
 ## Result
 

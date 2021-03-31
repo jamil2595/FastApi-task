@@ -21,3 +21,4 @@ typing==3.7.4.3
 typing-extensions==3.7.4.3
 uvicorn==0.13.4
 zipp==3.4.1
+requests==2.25.1
